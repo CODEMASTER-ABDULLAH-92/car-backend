@@ -28,5 +28,5 @@ app.get("/", (req, res) => {
 app.use("/api/car",carRouter);
 app.use("/api/user",userRouter);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT} (${process.env.PORT || "default 8000"})`));
