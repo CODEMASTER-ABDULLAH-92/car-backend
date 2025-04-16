@@ -1,5 +1,5 @@
 import express from "express";
-import "dotenv/config";  // No need for dotenv.config() since it's handled here
+import "dotenv/config";
 import helmet from "helmet";
 import cors from "cors";
 import morgan from "morgan";
@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(helmet());
-app.use(cors({origin: "*",credentials:true}));
+app.use(cors({origin: "http://localhost:5173",credentials:true}));
 app.use(morgan("dev"));
 
 
